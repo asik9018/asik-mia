@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Asik Mia | Web Analytics & Digital Marketing Expert</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3498db;
+            --secondary: #2c3e50;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --gray: #95a5a6;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--secondary);
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            bottom: -5px;
+            left: 0;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Enhanced Professional Hero Section */
+        .home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a2980, #26d0ce);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .home::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        .home .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+        }
+
+        .home-content {
+            flex: 1;
+            color: white;
+            max-width: 600px;
+            padding-right: 40px;
+            animation: fadeInLeft 1s ease-out;
+        }
+
+        .home-content h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .home-content h1 span {
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .home-content h1 span::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            background: var(--primary);
+            bottom: 5px;
+            left: 0;
+            z-index: -1;
+            opacity: 0.7;
+            border-radius: 2px;
+        }
+
+        .home-content p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--light);
+            font-weight: 300;
+        }
+
+        /* Expertise Badges */
+        .expertise-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }
+
+        .badge:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-3px);
+        }
+
+        .home-content .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: 2px solid var(--primary);
+            font-size: 1.1rem;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-content .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--secondary);
+            transition: var(--transition);
+            z-index: -1;
+        }
+
+        .home-content .btn:hover {
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .home-content .btn:hover::before {
+            left: 0;
+        }
+
+        .home-img {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            animation: fadeInRight 1s ease-out;
+        }
+
+        .home-img::before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(52, 152, 219, 0.2);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            animation: pulse 3s infinite;
+        }
+
+        .home-img img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 8px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+        }
+
+        .home-img img:hover {
+            transform: scale(1.05);
+            border-color: var(--primary);
+        }
+
+        /* Stats Section */
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            max-width: 500px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--light);
+        }
+
+        /* Floating Elements */
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .floating-element {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) {
+            width: 70px;
+            height: 70px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            width: 50px;
+            height: 50px;
+            top: 70%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            top: 20%;
+            left: 85%;
+            animation-delay: 4s;
+        }
+
+        .floating-element:nth-child(4) {
+            width: 40px;
+            height: 40px;
+            top: 80%;
+            left: 15%;
+            animation-delay: 1s;
+        }
+
+        /* Section Common Styles */
+        section {
+            padding: 100px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: var(--secondary);
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .subtext {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
+            color: var(--gray);
+        }
+
+        /* About Section */
+        .about {
+            background-color: white;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .about strong {
+            color: var(--primary);
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            background-color: #f5f7fa;
+        }
+
+        .filter-btns {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btns button {
+            background: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .filter-btns button.active,
+        .filter-btns button:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .portfolio-gallery .item {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .portfolio-gallery .item:hover {
+            transform: translateY(-10px);
+        }
+
+        .portfolio-gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .portfolio-gallery .item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Services Section */
+        .services {
+            background-color: white;
+        }
+
+        .service-boxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .box {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            border-top: 4px solid var(--primary);
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .box i {
+            font-size: 50px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .box h3 {
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #f5f7fa;
+        }
+
+        .testimonial-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid var(--primary);
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .testimonial h4 {
+            color: var(--primary);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .info p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .info strong {
+            min-width: 100px;
+            color: var(--secondary);
+        }
+
+        .info a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .info a:hover {
+            text-decoration: underline;
+        }
+
+        .social-links {
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            margin-right: 10px;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--secondary);
+            transform: translateY(-5px);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            transition: var(--transition);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        /* Animations */
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.7;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+                opacity: 0.4;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.7;
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(10deg);
+            }
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+
+        /* Animation for elements */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .home .container {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 100px;
+            }
+
+            .home-content {
+                padding-right: 0;
+                margin-bottom: 50px;
+            }
+
+            .home-content h1 {
+                font-size: 2.8rem;
+            }
+
+            .home-content p {
+                font-size: 1.3rem;
+            }
+
+            .home-img img {
+                width: 280px;
+                height: 280px;
+            }
+
+            .home-img::before {
+                width: 320px;
+                height: 320px;
+            }
+
+            .stats {
+                justify-content: space-around;
+                max-width: 100%;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                background: white;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                transition: var(--transition);
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .home-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .home-content p {
+                font-size: 1.1rem;
+            }
+
+            .home-img img {
+                width: 220px;
+                height: 220px;
+            }
+
+            .home-img::before {
+                width: 260px;
+                height: 260px;
+            }
+
+            .badge {
+                font-size: 0.8rem;
+                padding: 8px 15px;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            section h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">ASIK<span>.</span></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home/Hero Section -->
+    <section id="home" class="home">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="container">
+            <div class="home-content">
+                <h1>Hello, I'm <span>Md. Asik Mia</span></h1>
+                <p>Web Analytics, GA4, Google Ads, and Facebook CAPI Expert</p>
+                
+                <div class="expertise-badges">
+                    <div class="badge">Google Analytics 4</div>
+                    <div class="badge">E-commerce Tracking</div>
+                    <div class="badge">Google Ads</div>
+                    <div class="badge">Facebook CAPI</div>
+                    <div class="badge">Conversion Tracking</div>
+                    <div class="badge">Data Analysis</div>
+                </div>
+                
+                <p>I help businesses achieve accurate data tracking for higher ROI and better marketing performance.</p>
+                
+                <a href="#contact" class="btn">
+                    <i class="fas fa-paper-plane"></i> Let's Work Together
+                </a>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="5">0</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="45">0</span>
+                        <span class="stat-label">Clients</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="home-img">
+                <img src="./source/my-photo.jpg" alt="Md. Asik Mia" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="fade-in">About Me</h2>
+            <p class="fade-in">
+                I'm <strong>Md. Asik Mia</strong> from Dhaka, Bangladesh.  
+                I specialize in <strong>Web Analytics, GA4 E-commerce Tracking, Google Ads Conversion Tracking, and Facebook Pixel & Conversion API (CAPI)</strong>.  
+                I help businesses achieve accurate data tracking for higher ROI and better marketing performance.
+            </p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="fade-in">My Amazing Works</h2>
+            <p class="subtext fade-in">
+                The best way to scale your business is through accurate data tracking,
+                GA4 setup, and optimized Google Ads campaigns.
+            </p>
+
+            <div class="filter-btns fade-in">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="ecommerce">Ecommerce Tracking</button>
+                <button data-filter="googleads">Google Ads</button>
+                <button data-filter="fbpixel">FB Pixel & CAPI</button>
+            </div>
+
+            <div class="portfolio-gallery">
+                <div class="item ecommerce fade-in">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Ecommerce Tracking" />
+                </div>
+                <div class="item googleads fade-in">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Google Ads Tracking" />
+                </div>
+                <div class="item fbpixel fade-in">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="FB Pixel & CAPI" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="fade-in">My Services</h2>
+            <div class="service-boxes">
+                <div class="box fade-in">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Web Analytics</h3>
+                    <p>Understand your visitors, sessions, and conversions using GA4 and Tag Manager.</p>
+                </div>
+                <div class="box fade-in">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Google Ads Tracking</h3>
+                    <p>Setup advanced conversion tracking to boost campaign ROI and reporting accuracy.</p>
+                </div>
+                <div class="box fade-in">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook Pixel & CAPI</h3>
+                    <p>Implement precise Meta Pixel and Conversion API for better ad optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="fade-in">What My Clients Say</h2>
+            <p class="subtext fade-in">Responsive and adaptive design helps make analytics solutions accessible everywhere.</p>
+            <div class="testimonial-container">
+                <div class="testimonial fade-in">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Client" />
+                    <p>"Asik perfectly set up GA4 and CAPI tracking — our reports are now 100% accurate!"</p>
+                    <h4>— Client from USA</h4>
+                </div>
+                <div class="testimonial fade-in">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Client" />
+                    <p>"Excellent work! Very professional and knowledgeable about analytics."</p>
+                    <h4>— Ecommerce Owner</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="fade-in">Contact Me</h2>
+            <div class="contact-grid">
+                <div class="info fade-in">
+                    <p><strong>Address:</strong> Dhaka, Bangladesh</p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/8801867880469" target="_blank">01867880469</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:gtasikkc@gmail.com">gtasikkc@gmail.com</a></p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61568117604870" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/md-asik-32b338194/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-in" onsubmit="return false;">
+                    <input type="text" placeholder="Your Name" required />
+                    <input type="email" placeholder="Your Email" required />
+                    <input type="tel" placeholder="Your Phone" required />
+                    <textarea rows="4" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© ASIK 2025 | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Portfolio Filter
+        const filterBtns = document.querySelectorAll('.filter-btns button');
+        const portfolioItems = document.querySelectorAll('.portfolio-gallery .item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Scroll Animation
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        fadeElements.forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+
+        // Animated counter for stats
+        document.addEventListener('DOMContentLoaded', function() {
+            const counters = document.querySelectorAll('.stat-number');
+            const speed = 200;
+            
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-count');
+                    const count = +counter.innerText;
+                    
+                    const inc = target / speed;
+                    
+                    if(count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                }
+                
+                updateCount();
+            });
+        });
+    </script>
+</body>
+</html>
