@@ -11,7 +11,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#1a2980">
+  <meta name="theme-color" content="#ff4da6">
   <meta name="description" content="Md. Asik Mia — Web Analytics, GA4, Google Ads & Facebook CAPI expert. Accurate tracking, conversion setup and eCommerce analytics for higher ROI.">
   <link rel="canonical" href="https://asik9018.github.io/asik-mia/">
   <meta name="robots" content="index,follow">
@@ -23,67 +23,81 @@
   <meta property="og:url" content="https://asik9018.github.io/asik-mia/">
   <meta property="og:image" content="https://asik9018.github.io/asik-mia/source/my-photo.jpg">
 
-  <!-- preconnect / performance -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <title>Md. Asik Mia | Web Analytics & Digital Marketing Expert</title>
 
-  <!-- Basic, well-scoped CSS (kept readable for editing) -->
   <style>
-    :root{--primary:#3498db;--secondary:#2c3e50;--light:#ecf0f1;--dark:#2c3e50;--transition:all .25s ease}
+    :root{--primary:#ff4da6;--accent:#1a2980;--dark:#1f2937;--muted:#6b7280}
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{font-family:'Poppins',sans-serif;margin:0;color:#222;background:#f7f8fb;line-height:1.6}
+    body{font-family:'Poppins',sans-serif;margin:0;color:var(--dark);background:#fbfbfc;line-height:1.6}
     a{color:inherit}
     .container{max-width:1100px;margin:0 auto;padding:0 18px}
-    header{position:fixed;inset:0 auto auto 0;height:70px;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.06);z-index:1000}
+
+    /* Header / Nav */
+    header{position:fixed;left:0;right:0;top:0;height:70px;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.06);z-index:1100}
     .navbar{display:flex;align-items:center;justify-content:space-between;height:70px}
-    .logo{font-weight:700;color:var(--secondary);font-size:20px}
+    .logo{font-weight:800;color:var(--dark);font-size:20px}
     .logo span{color:var(--primary)}
-    .nav-links{display:flex;gap:22px;list-style:none}
-    .nav-links a{padding:6px 0;text-decoration:none;color:var(--dark);font-weight:600}
-    .mobile-menu{display:none}
+    .nav-links{display:flex;gap:20px;list-style:none;margin:0;padding:0}
+    .nav-links a{padding:8px 0;text-decoration:none;color:var(--dark);font-weight:600}
+
     /* Hero */
-    .hero{min-height:90vh;display:flex;align-items:center;padding-top:70px;background:linear-gradient(135deg,#1a2980 0%,#26d0ce 100%);color:#fff}
+    .hero{min-height:92vh;display:flex;align-items:center;padding-top:70px;background:linear-gradient(135deg,#1a2980 0%,#26d0ce 100%);color:#fff}
     .hero-inner{display:flex;gap:40px;width:100%;align-items:center}
     .hero-left{flex:1}
     .hero h1{font-size:2.4rem;margin:0 0 12px}
-    .hero p.lead{font-size:1.05rem;margin-bottom:18px;color:rgba(255,255,255,.9);font-weight:300}
+    .hero p.lead{font-size:1.05rem;margin-bottom:18px;color:rgba(255,255,255,.95);font-weight:300}
     .badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
-    .badge{background:rgba(255,255,255,.12);padding:8px 14px;border-radius:999px;font-weight:600}
-    .cta{display:inline-flex;align-items:center;gap:10px;background:var(--primary);color:#fff;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700}
-    .hero-right{width:320px;text-align:center}
+    .badge{background:rgba(255,255,255,.12);padding:8px 14px;border-radius:999px;font-weight:700}
+    .cta{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--primary);padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:700}
+    .hero-right{width:300px;text-align:center}
     .hero-right img{width:220px;height:220px;object-fit:cover;border-radius:50%;border:6px solid rgba(255,255,255,.12)}
 
     /* Sections */
     section{padding:70px 0}
-    h2{text-align:center;font-size:28px;color:var(--secondary);margin-bottom:8px}
-    .subtext{text-align:center;color:#6b7280;max-width:760px;margin:0 auto 28px}
+    h2{text-align:center;font-size:28px;color:var(--dark);margin-bottom:8px}
+    .subtext{text-align:center;color:var(--muted);max-width:760px;margin:0 auto 28px}
 
     /* Services */
-    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
-    .service{background:#fff;padding:22px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,.06);border-top:4px solid var(--primary)}
-    .service h3{margin:10px 0;color:var(--secondary)}
-    .service p{color:#555}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+    .service{background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,.06);border-top:4px solid var(--primary);display:flex;flex-direction:column;gap:12px}
+    .service h3{margin:0;color:var(--dark)}
+    .service p{color:#444;flex:1}
+    .service .thumbs{display:flex;gap:8px}
+    .service .thumbs img{width:100%;height:72px;object-fit:cover;border-radius:6px}
+    .service .action{display:flex;gap:8px;align-items:center}
+    .btn{display:inline-block;padding:10px 14px;background:var(--primary);color:#fff;border-radius:8px;text-decoration:none;font-weight:700;border:none;cursor:pointer}
+    .btn-outline{background:transparent;border:1px solid #eee;color:var(--primary);}
 
     /* Portfolio */
-    .portfolio-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-    .portfolio-gallery img{width:100%;height:200px;object-fit:cover;border-radius:8px}
+    .portfolio-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .portfolio-card{position:relative;border-radius:10px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.06);background:#fff}
+    .portfolio-card img{width:100%;height:220px;object-fit:cover;display:block}
+    .portfolio-card .meta{padding:12px}
 
-    /* Contact */
+    /* Contact & forms */
     .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
-    .info p{margin:.5rem 0}
+    .info p{margin:.45rem 0}
+    .social-links a{margin-right:12px;font-size:18px}
     .contact-form input,.contact-form textarea{width:100%;padding:12px;border-radius:8px;border:1px solid #e6e6e6;margin-bottom:12px}
     .contact-form .btn{display:inline-block;padding:12px 18px;background:var(--primary);color:#fff;border-radius:8px;border:none;font-weight:700}
     .success-msg{display:none;padding:12px;border-radius:8px;background:#ecfdf5;color:#064e3b;border:1px solid #bbf7d0;margin-top:12px}
 
-    footer{padding:28px 0;text-align:center;background:var(--secondary);color:#fff;margin-top:28px}
+    footer{padding:28px 0;text-align:center;background:var(--dark);color:#fff;margin-top:28px}
 
-    @media (max-width:900px){.hero-inner{flex-direction:column-reverse}.hero-right{width:220px}.contact-grid{grid-template-columns:1fr}}
+    /* Modal / lightbox */
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;padding:20px;z-index:1200;visibility:hidden;opacity:0;transition:opacity .2s ease}
+    .modal.open{visibility:visible;opacity:1}
+    .modal .inner{max-width:980px;width:100%;background:#fff;border-radius:10px;overflow:hidden}
+    .modal img{width:100%;height:520px;object-fit:contain;background:#000}
+    .modal .close{position:absolute;right:14px;top:10px;background:rgba(255,255,255,.9);border-radius:50%;padding:8px;cursor:pointer}
 
+    @media (max-width:900px){.hero-inner{flex-direction:column-reverse}.hero-right{width:220px}.contact-grid{grid-template-columns:1fr}.portfolio-gallery{grid-template-columns:repeat(2,1fr)}.modal img{height:360px}}
   </style>
 </head>
 <body>
@@ -92,9 +106,9 @@
 
   <header>
     <div class="container">
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Primary navigation">
         <div class="logo">ASIK<span>.</span></div>
-        <ul class="nav-links" role="navigation" aria-label="Primary">
+        <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -110,69 +124,126 @@
     <section id="home" class="hero">
       <div class="container hero-inner">
         <div class="hero-left">
-          <h1>Hello, I'm <strong>Md. Asik Mia</strong></h1>
-          <p class="lead">I help businesses get accurate analytics — GA4, Tag Manager, Google Ads & Facebook CAPI implementation for better ROAS and reliable reports.</p>
+          <h1>Hey — I'm <strong>Asik</strong></h1>
+          <p class="lead">I make analytics trustworthy. GA4 migrations, Tag Manager architecture, and conversion tracking that tell the real story — so your ads spend and product decisions actually work.</p>
+
           <div class="badges" aria-hidden>
-            <span class="badge">GA4</span>
-            <span class="badge">E‑commerce Tracking</span>
-            <span class="badge">Google Ads</span>
-            <span class="badge">Facebook CAPI</span>
-            <span class="badge">Conversion Tracking</span>
+            <a class="badge" href="#services">GA4</a>
+            <a class="badge" href="#services">E‑commerce</a>
+            <a class="badge" href="#services">Google Ads</a>
+            <a class="badge" href="#services">Facebook CAPI</a>
+            <a class="badge" href="#contact">Work with me</a>
           </div>
 
-          <a class="cta" href="#contact" id="letsWorkBtn"><i class="fas fa-paper-plane"></i> Let's Work Together</a>
+          <div style="margin-top:14px;display:flex;gap:12px;align-items:center">
+            <a class="cta" href="#contact" id="letsWorkBtn"><i class="fas fa-paper-plane"></i> Let's Work</a>
+            <a class="btn btn-outline" href="#portfolio">View Portfolio</a>
+          </div>
         </div>
 
         <div class="hero-right">
           <img src="./source/my-photo.jpg" alt="Md. Asik Mia — Web Analytics Expert" loading="lazy">
+          <div style="margin-top:10px;color:rgba(255,255,255,.9);font-weight:600">Dhaka · Web Analytics Specialist</div>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p class="subtext">I'm <strong>Md. Asik Mia</strong> from Dhaka, Bangladesh. I specialize in <strong>Web Analytics, GA4, Tag Manager, eCommerce tracking, Google Ads conversion setup</strong>, and <strong>Facebook Pixel & Conversion API (CAPI)</strong>. I help businesses implement reliable tracking so decisions are based on accurate data.</p>
-      </div>
-    </section>
+    <!-- About (with embedded quick form) -->
+    
 
     <!-- Services -->
     <section id="services">
       <div class="container">
-        <h2>My Services</h2>
-        <p class="subtext">Services designed for measurable growth — pick what fits your project.</p>
+        <h2>Services</h2>
+        <p class="subtext">Choose a service and click <em>Learn more</em> to open details or use <em>Get quote</em> to jump to contact.</p>
 
         <div class="services-grid">
+          <!-- Service 1 -->
           <article class="service" aria-labelledby="s1">
             <h3 id="s1">GA4 Setup & Migration</h3>
-            <p>Full GA4 implementation, property configuration, events & conversions, debug with Tag Assistant & Realtime. Migration from Universal Analytics with dataLayer & enhanced measurement.</p>
+            <p>Complete GA4 property setup, events and conversion mapping, historic UA migration planning, and validation so reporting matches reality.</p>
+            <div class="thumbs">
+              <img src="./source/service-ga4-1.jpg" alt="GA4 dashboard">
+              <img src="./source/service-ga4-2.jpg" alt="Event list">
+              <img src="./source/service-ga4-3.jpg" alt="Ecommerce events">
+            </div>
+            <div class="action">
+              <button class="btn" data-action="detail" data-service="GA4 Setup & Migration">Learn more</button>
+              <button class="btn btn-outline" data-action="contact" data-service="GA4 Setup & Migration">Get quote</button>
+            </div>
           </article>
 
+          <!-- Service 2 -->
           <article class="service" aria-labelledby="s2">
             <h3 id="s2">Tag Manager Architecture</h3>
-            <p>Clean GTM workspace: event schemas, custom variables, triggers, user‑friendly naming conventions, environments and version control for safe deployments.</p>
+            <p>GTM workspace design, consistent naming, triggers, variables, and environments so deployments are safe and repeatable.</p>
+            <div class="thumbs">
+              <img src="./source/service-gtm-1.jpg" alt="GTM workspace">
+              <img src="./source/service-gtm-2.jpg" alt="Tag structure">
+            </div>
+            <div class="action">
+              <button class="btn" data-action="detail" data-service="Tag Manager Architecture">Learn more</button>
+              <button class="btn btn-outline" data-action="contact" data-service="Tag Manager Architecture">Get quote</button>
+            </div>
           </article>
 
+          <!-- Service 3 -->
           <article class="service" aria-labelledby="s3">
             <h3 id="s3">Ecommerce & Enhanced Measurement</h3>
-            <p>Implement eCommerce dataLayer (items, transaction, value, currency), map to GA4 events, and validate purchase & item_list reporting for accurate revenue reporting.</p>
+            <p>DataLayer design (items, transaction, value), GA4 ecommerce mapping and end-to-end validation to ensure revenue is tracked correctly.</p>
+            <div class="thumbs">
+              <img src="./source/service-ecom-1.jpg" alt="Ecommerce dataLayer">
+              <img src="./source/service-ecom-2.jpg" alt="Purchase event">
+              <img src="./source/service-ecom-3.jpg" alt="Product list">
+            </div>
+            <div class="action">
+              <button class="btn" data-action="detail" data-service="Ecommerce & Enhanced Measurement">Learn more</button>
+              <button class="btn btn-outline" data-action="contact" data-service="Ecommerce & Enhanced Measurement">Get quote</button>
+            </div>
           </article>
 
+          <!-- Service 4 -->
           <article class="service" aria-labelledby="s4">
             <h3 id="s4">Google Ads & Conversion Tracking</h3>
-            <p>Accurate conversion tagging, cross‑platform attribution fixes, server side suggestions, and event deduplication to improve bidding and ROI measurement.</p>
+            <p>Accurate conversion tagging, event deduplication, and suggestions for server-side tracking to improve bidding and ROI measurement.</p>
+            <div class="thumbs">
+              <img src="./source/service-ads-1.jpg" alt="Conversion setup">
+              <img src="./source/service-ads-2.jpg" alt="Ads report">
+            </div>
+            <div class="action">
+              <button class="btn" data-action="detail" data-service="Google Ads & Conversion Tracking">Learn more</button>
+              <button class="btn btn-outline" data-action="contact" data-service="Google Ads & Conversion Tracking">Get quote</button>
+            </div>
           </article>
 
+          <!-- Service 5 -->
           <article class="service" aria-labelledby="s5">
             <h3 id="s5">Facebook Pixel & Conversion API (CAPI)</h3>
-            <p>Pixel setup, event mapping and server‑side CAPI recommendations to recover lost browser signals and improve campaign delivery.</p>
+            <p>Pixel setup, event mapping and server-side CAPI recommendations to recover lost browser signals and improve campaign delivery.</p>
+            <div class="thumbs">
+              <img src="./source/service-fb-1.jpg" alt="FB Pixel">
+              <img src="./source/service-fb-2.jpg" alt="CAPI setup">
+            </div>
+            <div class="action">
+              <button class="btn" data-action="detail" data-service="Facebook Pixel & CAPI">Learn more</button>
+              <button class="btn btn-outline" data-action="contact" data-service="Facebook Pixel & CAPI">Get quote</button>
+            </div>
           </article>
 
+          <!-- Service 6 -->
           <article class="service" aria-labelledby="s6">
             <h3 id="s6">Analytics QA & Training</h3>
-            <p>Full QA checklist, debugging, GA4 reports, and handover training so your team can maintain tracking and interpret data correctly.</p>
+            <p>Full QA checklist, debugging, dashboards and handover training so your team can keep tracking accurate after the engagement.</p>
+            <div class="thumbs">
+              <img src="./source/service-qa-1.jpg" alt="QA checklist">
+              <img src="./source/service-qa-2.jpg" alt="Training slide">
+            </div>
+            <div class="action">
+              <button class="btn" data-action="detail" data-service="Analytics QA & Training">Learn more</button>
+              <button class="btn btn-outline" data-action="contact" data-service="Analytics QA & Training">Get quote</button>
+            </div>
           </article>
+
         </div>
       </div>
     </section>
@@ -180,12 +251,29 @@
     <!-- Portfolio -->
     <section id="portfolio">
       <div class="container">
-        <h2>Selected Work</h2>
-        <p class="subtext">Snapshots of tracking setups and dashboards I built.</p>
-        <div class="portfolio-gallery">
-          <img src="./source/custom_report.png" alt="Custom analytics report" loading="lazy">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=60" alt="Google Ads dashboard" loading="lazy">
-          <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1000&q=60" alt="Facebook Pixel setup" loading="lazy">
+        <h2>Portfolio</h2>
+        <p class="subtext">Real work — audits, GTM builds and dashboard snapshots. Click any item to enlarge.</p>
+
+        <div class="portfolio-gallery" id="portfolioGallery">
+          <div class="portfolio-card" data-src="./source/portfolio-1.jpg">
+            <img src="./source/portfolio-1-thumb.jpg" alt="Custom analytics report">
+            <div class="meta"><strong>Custom analytics report</strong><div style="color:var(--muted);font-size:13px">GA4 dashboard & metrics</div></div>
+          </div>
+
+          <div class="portfolio-card" data-src="./source/portfolio-2.jpg">
+            <img src="./source/portfolio-2-thumb.jpg" alt="Google Ads dashboard">
+            <div class="meta"><strong>Google Ads dashboard</strong><div style="color:var(--muted);font-size:13px">ROAS focused views</div></div>
+          </div>
+
+          <div class="portfolio-card" data-src="./source/portfolio-3.jpg">
+            <img src="./source/portfolio-3-thumb.jpg" alt="Server-side CAPI setup">
+            <div class="meta"><strong>Server-side CAPI</strong><div style="color:var(--muted);font-size:13px">Conversion API implementation</div></div>
+          </div>
+
+          <div class="portfolio-card" data-src="./source/portfolio-4.jpg">
+            <img src="./source/portfolio-4-thumb.jpg" alt="Ecommerce events mapping">
+            <div class="meta"><strong>Ecommerce mapping</strong><div style="color:var(--muted);font-size:13px">Purchase & product lists</div></div>
+          </div>
         </div>
       </div>
     </section>
@@ -193,25 +281,26 @@
     <!-- Contact -->
     <section id="contact">
       <div class="container">
-        <h2>Contact Me</h2>
-        <p class="subtext">Ready to fix your tracking? Send a quick message — or use the contact links.</p>
+        <h2>Contact</h2>
+        <p class="subtext">Ready to fix your tracking? Send a quick message — or use the contact links below.</p>
 
         <div class="contact-grid">
           <div class="info">
             <p><strong>Location:</strong> Dhaka, Bangladesh</p>
             <p><strong>WhatsApp:</strong> <a href="https://wa.me/8801867880469" target="_blank" rel="noopener">01867880469</a></p>
             <p><strong>Email:</strong> <a href="mailto:gtasikkc@gmail.com">gtasikkc@gmail.com</a></p>
-            <div class="social-links" aria-hidden>
-              <a href="https://www.facebook.com/profile.php?id=61568117604870" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.linkedin.com/in/md-asik-32b338194/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+            <div class="social-links" aria-label="Social links">
+              <a href="https://www.facebook.com/profile.php?id=61568117604870" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.linkedin.com/in/md-asik-32b338194/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/asik9018" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
           </div>
 
-          <!-- Contact form: uses Formspree by default (no server required). Replace ACTION with your endpoint. -->
+          <!-- Contact form -->
           <form id="contactForm" class="contact-form" action="" method="POST">
             <input type="text" name="name" placeholder="Your Name" required aria-label="Your name">
             <input type="email" name="email" placeholder="Your Email" required aria-label="Your email">
-            <input type="tel" name="phone" placeholder="Your Phone" required aria-label="Your phone">
+            <input type="tel" name="phone" placeholder="Your Phone" aria-label="Your phone">
             <textarea name="message" rows="4" placeholder="Your Message" aria-label="Your message"></textarea>
             <button type="submit" class="btn">Send Message</button>
             <div id="formSuccess" class="success-msg" role="status">Thanks — your message was sent. I will reply within 24 hours.</div>
@@ -220,13 +309,54 @@
 
       </div>
     </section>
-  </main>
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="subtext">I’m <strong>Md. Asik Mia</strong>. I help businesses track what actually matters—real conversions, clean user behavior, and accurate data you can make decisions from. No guesswork. No unnecessary complexity. Just tracking that works every time.</p>
+
+        <div style="max-width:820px;margin:18px auto 0;display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start">
+          <div>
+            <h3 style="margin-top:0">What I focus on</h3>
+            <ul style="color:var(--muted);">
+              <li>Fixing broken or incomplete tracking.</li>
+              <li>Setting up clean GA4 + GTM environments from scratch.</li>
+              <li>Accurate e‑commerce tracking for Shopify, WordPress, and Wix.</li>
+              <li>Pixel, CAPI, and server‑side tracking for Meta, TikTok, and Google Ads.</li>
+            </ul>
+
+            <p style="color:var(--muted);margin-top:14px">My goal is simple: give you reliable data so your ads perform better, your decisions become easier, and your business grows faster.</p>
+          </div>
+
+          <div style="background:#fff;padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,.04)">
+            <strong>Quick Project Inquiry</strong>
+            <form id="aboutQuickForm" style="margin-top:10px">
+              <input name="name" placeholder="Your name" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;margin-bottom:8px">
+              <input name="email" placeholder="Email" type="email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;margin-bottom:8px">
+              <input name="website" placeholder="Website (optional)" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;margin-bottom:8px">
+              <textarea name="message" placeholder="Tell me a bit about your project" rows="3" style="width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;margin-bottom:8px"></textarea>
+              <button type="submit" class="btn" style="width:100%">Send inquiry</button>
+              <div id="aboutSuccess" class="success-msg" role="status">Thanks — your inquiry has been received.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
 
   <footer>
     <div class="container">
-      <p>© ASIK 2025 | Built with focus on data & performance</p>
+      <p>© ASIK 2025 | Built for accurate data & better decisions</p>
     </div>
   </footer>
+
+  <!-- Modal for portfolio / service details -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="inner" role="dialog" aria-modal="true">
+      <button id="modalClose" class="close" aria-label="Close">✕</button>
+      <img id="modalImg" src="" alt="">
+      <div style="padding:12px;border-top:1px solid #eee"><div id="modalCaption" style="font-weight:700"></div><div id="modalText" style="color:var(--muted);margin-top:6px"></div></div>
+    </div>
+  </div>
 
   <!-- Structured data for SEO (Person) -->
   <script type="application/ld+json">
@@ -240,29 +370,78 @@
   }
   </script>
 
-  <!-- Minimal JS: interactions, form submission + success + dataLayer push -->
   <script>
-    // Mobile Toggle (kept minimal)
-    (function(){
-      const mobile = document.querySelector('.mobile-menu');
-      const nav = document.querySelector('.nav-links');
-      if(mobile){mobile.addEventListener('click',()=>nav.classList.toggle('open'))}
-    })();
-
     // Smooth scroll offset for fixed header
     document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',function(e){
-      const target = document.querySelector(this.getAttribute('href'));
+      const href = this.getAttribute('href');
+      if(!href || href === '#') return;
+      const target = document.querySelector(href);
       if(target){e.preventDefault();window.scrollTo({top:target.offsetTop-70,behavior:'smooth'})}
     }));
 
-    // Form submit handling: client-side validate, push to dataLayer, show success
+    // Service buttons: detail modal or contact scroll
+    document.querySelectorAll('.service .action button').forEach(btn=>{
+      btn.addEventListener('click', function(){
+        const action = this.getAttribute('data-action');
+        const service = this.getAttribute('data-service');
+        if(action === 'contact'){
+          document.querySelector('#contact').scrollIntoView({behavior:'smooth',block:'start'});
+          // Pre-fill contact form message
+          setTimeout(()=>{
+            const msg = document.querySelector('textarea[name="message"]');
+            if(msg) msg.value = `Inquiry about: ${service}`;
+            const nameInput = document.querySelector('input[name="name"]');
+            if(nameInput) nameInput.focus();
+          },500);
+          // Push dataLayer event
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({event:'service_contact_click',service:service});
+        } else if(action === 'detail'){
+          openModalForService(service);
+        }
+      })
+    });
+
+    // Minimal modal content for services
+    function openModalForService(service){
+      const modal = document.getElementById('modal');
+      const img = document.getElementById('modalImg');
+      const caption = document.getElementById('modalCaption');
+      const text = document.getElementById('modalText');
+      caption.textContent = service;
+      text.textContent = 'Detailed service description and deliverables will be provided after initial audit.';
+      // Use a generic image per service name (you can change paths)
+      const slug = service.toLowerCase().replace(/[^a-z0-9]+/g,'-');
+      img.src = `./source/${slug}.jpg`;
+      img.alt = service;
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden','false');
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({event:'service_detail_open',service:service});
+    }
+
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+    document.getElementById('modal').addEventListener('click', function(e){ if(e.target === this) closeModal(); });
+    function closeModal(){ const m=document.getElementById('modal'); m.classList.remove('open'); m.setAttribute('aria-hidden','true'); }
+
+    // Portfolio click -> lightbox
+    document.querySelectorAll('.portfolio-card').forEach(card=>{
+      card.addEventListener('click', function(){
+        const src = this.getAttribute('data-src');
+        const modal = document.getElementById('modal');
+        const img = document.getElementById('modalImg');
+        const caption = document.getElementById('modalCaption');
+        const text = document.getElementById('modalText');
+        img.src = src; caption.textContent = this.querySelector('.meta strong').textContent; text.textContent = this.querySelector('.meta div') ? this.querySelector('.meta div').textContent : '';
+        modal.classList.add('open'); modal.setAttribute('aria-hidden','false');
+        window.dataLayer = window.dataLayer || []; window.dataLayer.push({event:'portfolio_open',item:caption.textContent});
+      });
+    });
+
+    // Contact form handling: push to dataLayer and fake-send if no action
     (function(){
       const form = document.getElementById('contactForm');
       const successBox = document.getElementById('formSuccess');
-
-      // If you want a form backend without server code, use Formspree or Getform and set form.action to the endpoint.
-      // Example (Formspree): form.action = 'https://formspree.io/f/yourFormId'; form.method = 'POST';
-
       form.addEventListener('submit', function(e){
         e.preventDefault();
         const formData = new FormData(form);
@@ -270,36 +449,35 @@
         const email = formData.get('email') || '';
         const phone = formData.get('phone') || '';
         const message = formData.get('message') || '';
-
-        // Basic validation
-        if(!name || !email) { alert('Please provide name and email.'); return; }
-
-        // Push to dataLayer for GTM -> use this in Tag Manager to capture form submissions
+        if(!name || !email){ alert('Please provide name and email.'); return; }
         window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-          event: 'contact_form_submit',
-          form_name: 'contact_form',
-          form_data: { name: name, email: email, phone: phone }
-        });
-
-        // Show success to the user
+        window.dataLayer.push({event:'contact_form_submit',form_name:'contact_form',form_data:{name:name,email:email,phone:phone}});
         successBox.style.display = 'block';
-
-        // If an action is provided (e.g., Formspree), send via fetch so page doesn't reload
         if(form.action){
-          // submit using fetch
           fetch(form.action, { method: form.method || 'POST', body: formData, headers: { 'Accept':'application/json' } })
-            .then(resp=>{
-              if(resp.ok){ successBox.textContent = 'Thanks — your message was sent. I will reply within 24 hours.'; form.reset(); }
-              else { successBox.textContent = 'Submission failed. Please try again later.'; }
-            }).catch(()=>{ successBox.textContent = 'Submission failed. Please try again later.'; });
-        } else {
-          // No backend — keep the success message and reset form
-          form.reset();
-        }
+            .then(resp=>{ if(resp.ok){ successBox.textContent = 'Thanks — your message was sent.'; form.reset(); } else { successBox.textContent = 'Submission failed. Please try again later.'; } })
+            .catch(()=>{ successBox.textContent = 'Submission failed. Please try again later.'; });
+        } else { form.reset(); }
       });
     })();
-  </script>
 
+    // About quick form
+    (function(){
+      const form = document.getElementById('aboutQuickForm');
+      const success = document.getElementById('aboutSuccess');
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        const data = new FormData(form);
+        const name = data.get('name')||''; const email = data.get('email')||'';
+        if(!name||!email){ alert('Please add name and email.'); return; }
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({event:'about_quick_inquiry',name:name,email:email,website:data.get('website')||''});
+        success.style.display = 'block'; form.reset();
+      });
+    })();
+
+    // Accessibility: close modal with ESC
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeModal(); } });
+  </script>
 </body>
 </html>
