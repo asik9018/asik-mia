@@ -1,7 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
- 
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5GQTWPCJ');</script>
+  <!-- End Google Tag Manager -->
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -442,10 +448,11 @@
         const name = formData.get('name') || '';
         const email = formData.get('email') || '';
         const phone = formData.get('phone') || '';
+         const country = formData.get('country') || '';
         const message = formData.get('message') || '';
         if(!name || !email){ alert('Please provide name and email.'); return; }
         window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({event:'contact_form_submit',form_name:'contact_form',form_data:{name:name,email:email,phone:phone}});
+        window.dataLayer.push({event:'contact_form_submit',form_name:'contact_form',form_data:{name:name,email:email,phone:phone,country:country}});
         successBox.style.display = 'block';
         if(form.action){
           fetch(form.action, { method: form.method || 'POST', body: formData, headers: { 'Accept':'application/json' } })
