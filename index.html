@@ -468,10 +468,10 @@
       form.addEventListener('submit', function(e){
         e.preventDefault();
         const data = new FormData(form);
-        const name = data.get('name')||''; const email = data.get('email')||'';
-        if(!name||!email){ alert('Please add name and email.'); return; }
+        const name = data.get('name')||''; const email = data.get('email')||''; const phone = data.get('phone')||''; const country = data.get('country')||'';
+        if(!name||!email||!phone||!country){ alert('Please add name and email and phone and country.'); return; }
         window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({event:'about_quick_inquiry',name:name,email:email,website:data.get('website')||''});
+        window.dataLayer.push({event:'about_quick_inquiry',name:name,email:email,phone:phone,country:country,website:data.get('website')||''});
         success.style.display = 'block'; form.reset();
       });
     })();
