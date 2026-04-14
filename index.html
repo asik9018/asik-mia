@@ -1,393 +1,862 @@
-/p>
-                </div>
-            </div>
-        </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5GQTWPCJ');</script>
+  <!-- End Google Tag Manager -->
 
-        <section id="work" class="work">
-            <h2 class="section-title">Recent <span class="gradient-text">Work</span></h2>
-            <div class="work-grid">
-                <div class="work-card">
-                    <h4>✨ Fashion E-commerce GA4</h4>
-                    <p>Migrated 2 Shopify stores to GA4, increased conversion visibility by 40%</p>
-                </div>
-                <div class="work-card">
-                    <h4>✨ SaaS CAPI Implementation</h4>
-                    <p>Facebook CAPI + GTM server container, recovered 31% lost signals</p>
-                </div>
-                <div class="work-card">
-                    <h4>✨ Google Ads Dashboard</h4>
-                    <p>Custom Looker Studio dashboard reducing CPA by 23%</p>
-                </div>
-                <div class="work-card">
-                    <h4>✨ Headless eCommerce</h4>
-                    <p>Complete DataLayer for headless store with purchase tracking</p>
-                </div>
-            </div>
-        </section>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#6366f1">
+  <meta name="description" content="Md. Asik Mia — Web Analytics, GA4, Google Ads & Facebook CAPI expert. Accurate tracking, conversion setup and eCommerce analytics for higher ROI.">
+  <link rel="canonical" href="https://asik9018.github.io/asik-mia/">
+  <meta name="robots" content="index,follow">
 
-        <section id="contact" class="contact">
-            <h2>Let's Work <span class="gradient-text">Together</span></h2>
-            <p>Ready to fix your tracking and scale your business?</p>
-            <p>📍 Dhaka, Bangladesh (Remote Worldwide)</p>
-            <a href="#" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Get In Touch →</a>
-        </section>
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Md. Asik Mia — Web Analytics & Digital Marketing Expert">
+  <meta property="og:description" content="Accurate GA4, Tag Manager & Conversion tracking. eCommerce tracking, Google Ads & Facebook CAPI specialist from Dhaka, Bangladesh.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://asik9018.github.io/asik-mia/">
+  <meta property="og:image" content="https://asik9018.github.io/asik-mia/source/source/Google Ads Conversion And Google Analytics GTM Expert.jpg">
 
-        <footer>
-            <p>&copy; 2026 Md. Asik Mia. All rights reserved.</p>
-        </footer>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <title>Md. Asik Mia | Web Analytics & Digital Marketing Expert</title>
+
+  <style>
+    :root {
+      --primary: #6366f1;
+      --primary-dark: #4f46e5;
+      --secondary: #ec4899;
+      --dark: #0f172a;
+      --gray: #64748b;
+      --light-gray: #f1f5f9;
+      --white: #ffffff;
+      --success: #10b981;
+      --gradient: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    }
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    
+    /* Header */
+    header {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+    
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+    
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover { color: var(--primary); }
+    
+    .mobile-menu {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
+      padding-top: 72px;
+    }
+    
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    
+    .hero-badge {
+      display: inline-block;
+      background: rgba(99,102,241,0.1);
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    .hero p.lead {
+      font-size: 18px;
+      color: var(--gray);
+      margin-bottom: 28px;
+    }
+    
+    .hero-stats {
+      display: flex;
+      gap: 32px;
+      margin: 32px 0;
+    }
+    
+    .stat h3 { font-size: 28px; font-weight: 800; color: var(--dark); }
+    .stat p { font-size: 14px; color: var(--gray); }
+    
+    .btn-group {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      cursor: pointer;
+      border: none;
+      font-family: inherit;
+    }
+    
+    .btn-primary {
+      background: var(--gradient);
+      color: white;
+      box-shadow: var(--shadow-md);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .btn-outline {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      background: transparent;
+    }
+    
+    .btn-outline:hover {
+      background: var(--primary);
+      color: white;
+    }
+    
+    .hero-image {
+      position: relative;
+    }
+    
+    .hero-image img {
+      width: 100%;
+      max-width: 380px;
+      border-radius: 30px;
+      box-shadow: var(--shadow-xl);
+      border: 4px solid white;
+    }
+    
+    .hero-image::before {
+      content: '';
+      position: absolute;
+      inset: -20px;
+      background: var(--gradient);
+      border-radius: 50px;
+      opacity: 0.1;
+      z-index: -1;
+    }
+    
+    /* Section Styles */
+    section { padding: 80px 0; }
+    
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 48px;
+    }
+    
+    .section-header h2 {
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    
+    .section-header .subtext {
+      color: var(--gray);
+      font-size: 18px;
+    }
+    
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 30px;
+    }
+    
+    .service-card {
+      background: var(--white);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow-md);
+      transition: all 0.3s;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+    }
+    
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      background: var(--gradient);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .service-icon i { font-size: 28px; color: white; }
+    
+    .service-card h3 { font-size: 22px; margin-bottom: 12px; }
+    .service-card p { color: var(--gray); margin-bottom: 20px; }
+    
+    .service-features {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+    
+    .service-features li {
+      padding: 6px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+    }
+    
+    .service-features i { color: var(--success); font-size: 12px; }
+    
+    .quote-form {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #e2e8f0;
+      display: none;
+    }
+    
+    .quote-form input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      font-family: inherit;
+    }
+    
+    /* Portfolio */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    
+    .portfolio-item {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      cursor: pointer;
+      transition: all 0.3s;
+      background: var(--white);
+    }
+    
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+    }
+    
+    .portfolio-item img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    
+    .portfolio-info {
+      padding: 20px;
+    }
+    
+    .portfolio-info h4 { margin-bottom: 6px; }
+    .portfolio-info p { color: var(--gray); font-size: 14px; }
+    
+    /* Contact Section */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+    }
+    
+    .contact-info {
+      background: var(--light-gray);
+      padding: 32px;
+      border-radius: 24px;
+    }
+    
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .contact-detail i {
+      width: 44px;
+      height: 44px;
+      background: var(--gradient);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    
+    .help-box {
+      background: white;
+      padding: 24px;
+      border-radius: 20px;
+      margin-top: 24px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 16px;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      font-family: inherit;
+    }
+    
+    .success-msg {
+      display: none;
+      background: #d1fae5;
+      color: #065f46;
+      padding: 12px;
+      border-radius: 12px;
+      margin-top: 16px;
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: white;
+      padding: 48px 0 24px;
+    }
+    
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .footer-logo {
+      font-size: 28px;
+      font-weight: 800;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    .social-links a {
+      color: white;
+      margin-right: 16px;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+    
+    .social-links a:hover { color: var(--primary); }
+    
+    /* Modal */
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1100;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+    
+    .modal.open {
+      visibility: visible;
+      opacity: 1;
+    }
+    
+    .modal-content {
+      max-width: 700px;
+      width: 90%;
+      background: white;
+      border-radius: 24px;
+      overflow: hidden;
+    }
+    
+    .modal-content img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    
+    .modal-body { padding: 24px; }
+    
+    .close-modal {
+      float: right;
+      background: none;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+    
+    @media (max-width: 768px) {
+      .hero-inner { grid-template-columns: 1fr; text-align: center; }
+      .hero h1 { font-size: 40px; }
+      .hero-stats { justify-content: center; }
+      .btn-group { justify-content: center; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .mobile-menu { display: block; }
+      .section-header h2 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GQTWPCJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">ASIK</div>
+        <div class="mobile-menu"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <script>
-        // Three.js Setup
-        const canvas = document.getElementById('bg-canvas');
-        const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0x0a0a2a);
-        scene.fog = new THREE.FogExp2(0x0a0a2a, 0.008);
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <span class="hero-badge"><i class="fas fa-chart-line"></i> Web Analytics Expert</span>
+          <h1>Turn Data Into<br>Revenue Growth</h1>
+          <p class="lead">I help businesses track what actually matters — accurate GA4, GTM, and conversion tracking that drives real ROI. No guesswork, just precision.</p>
+          <div class="hero-stats">
+            <div class="stat"><h3>50+</h3><p>Projects Completed</p></div>
+            <div class="stat"><h3>98%</h3><p>Client Satisfaction</p></div>
+            <div class="stat"><h3>$10M+</h3><p>Revenue Tracked</p></div>
+          </div>
+          <div class="btn-group">
+            <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Start a Project</a>
+            <a href="#portfolio" class="btn btn-outline"><i class="fas fa-eye"></i> View Work</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="./source/my-photo.jpg" alt="Md. Asik Mia">
+        </div>
+      </div>
+    </section>
 
-        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
-        camera.position.set(0, 2, 8);
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <p class="subtext">I'm Md. Asik Mia — your partner in data-driven success</p>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start;">
+          <div>
+            <p style="font-size: 18px; margin-bottom: 20px;">With <strong>5+ years of experience</strong> in web analytics and digital marketing, I've helped businesses from startups to enterprises unlock the true potential of their data.</p>
+            <p style="color: var(--gray); margin-bottom: 20px;">My approach combines technical expertise with business strategy — ensuring every pixel, tag, and event serves your bottom line.</p>
+            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+              <span style="background: var(--light-gray); padding: 8px 16px; border-radius: 100px;">GA4 Certified</span>
+              <span style="background: var(--light-gray); padding: 8px 16px; border-radius: 100px;">Google Tag Manager</span>
+              <span style="background: var(--light-gray); padding: 8px 16px; border-radius: 100px;">Meta Blueprint</span>
+            </div>
+          </div>
+          <div style="background: var(--light-gray); padding: 28px; border-radius: 24px;">
+            <h3 style="margin-bottom: 16px;">Quick Project Inquiry</h3>
+            <form id="quickForm">
+              <input type="text" placeholder="Full Name" id="qfName" style="width:100%; padding:12px; margin-bottom:12px; border-radius:10px; border:1px solid #e2e8f0;">
+              <input type="email" placeholder="Email" id="qfEmail" style="width:100%; padding:12px; margin-bottom:12px; border-radius:10px; border:1px solid #e2e8f0;">
+              <input type="tel" placeholder="Phone" id="qfPhone" style="width:100%; padding:12px; margin-bottom:12px; border-radius:10px; border:1px solid #e2e8f0;">
+              <input type="text" placeholder="Country" id="qfCountry" style="width:100%; padding:12px; margin-bottom:12px; border-radius:10px; border:1px solid #e2e8f0;">
+              <button type="submit" class="btn btn-primary" style="width:100%">Send Inquiry</button>
+              <div id="quickSuccess" class="success-msg">Thanks! I'll reply within 24 hours.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        const renderer = new THREE.WebGLRenderer({ canvas, alpha: false, antialias: true });
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        renderer.setPixelRatio(window.devicePixelRatio);
+    <!-- Services Section -->
+    <section id="services" style="background: var(--light-gray);">
+      <div class="container">
+        <div class="section-header">
+          <h2>What I Do</h2>
+          <p class="subtext">Comprehensive analytics solutions tailored to your business</p>
+        </div>
+        <div class="services-grid" id="servicesGrid"></div>
+      </div>
+    </section>
 
-        // Controls
-        const controls = new THREE.OrbitControls(camera, canvas);
-        controls.enableDamping = true;
-        controls.dampingFactor = 0.05;
-        controls.autoRotate = true;
-        controls.autoRotateSpeed = 1.2;
-        controls.enableZoom = false;
-        controls.enablePan = false;
-        controls.target.set(0, 0, 0);
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h2>Recent Work</h2>
+          <p class="subtext">Real results from real clients</p>
+        </div>
+        <div class="portfolio-grid" id="portfolioGrid"></div>
+      </div>
+    </section>
 
-        // Lighting
-        const ambientLight = new THREE.AmbientLight(0x404060);
-        scene.add(ambientLight);
-        
-        const mainLight = new THREE.DirectionalLight(0xffffff, 1);
-        mainLight.position.set(5, 10, 7);
-        scene.add(mainLight);
-        
-        const fillLight = new THREE.PointLight(0x667eea, 0.5);
-        fillLight.position.set(0, -2, 0);
-        scene.add(fillLight);
-        
-        const backLight = new THREE.PointLight(0x764ba2, 0.6);
-        backLight.position.set(-2, 1, -4);
-        scene.add(backLight);
-        
-        // Animated accent lights
-        const accentColors = [0x667eea, 0x764ba2, 0x06b6d4];
-        const accentLights = [];
-        for (let i = 0; i < 3; i++) {
-            const light = new THREE.PointLight(accentColors[i], 0.4);
-            light.position.set(Math.sin(i * Math.PI * 2 / 3) * 4, 1, Math.cos(i * Math.PI * 2 / 3) * 4);
-            scene.add(light);
-            accentLights.push(light);
+    <!-- Contact Section -->
+    <section id="contact" style="background: var(--light-gray);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Let's Work Together</h2>
+          <p class="subtext">Ready to fix your tracking and scale your business?</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-detail">
+              <i class="fas fa-map-marker-alt"></i>
+              <div><strong>Location</strong><br>Dhaka, Bangladesh (Remote Worldwide)</div>
+            </div>
+            <div class="contact-detail">
+              <i class="fab fa-whatsapp"></i>
+              <div><strong>WhatsApp</strong><br><a href="https://wa.me/8801867880469">+880 1867-880469</a></div>
+            </div>
+            <div class="contact-detail">
+              <i class="fas fa-envelope"></i>
+              <div><strong>Email</strong><br><a href="mailto:gtasikkc@gmail.com">gtasikkc@gmail.com</a></div>
+            </div>
+            <div class="help-box">
+              <h4><i class="fas fa-handshake"></i> How I Help Businesses Grow</h4>
+              <ul style="margin-top: 16px; list-style: none;">
+                <li>✓ Fix untracked revenue & broken attribution</li>
+                <li>✓ Implement server-side tracking (CAPI, GTM)</li>
+                <li>✓ Build clean, auditable analytics architecture</li>
+                <li>✓ Reduce CPA and improve ROAS</li>
+                <li>✓ Train your team for long-term success</li>
+              </ul>
+            </div>
+          </div>
+          <form id="contactForm" class="contact-form">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number">
+            <input type="text" name="country" placeholder="Country">
+            <textarea name="message" rows="4" placeholder="Tell me about your project..."></textarea>
+            <button type="submit" class="btn btn-primary" style="width:100%"><i class="fas fa-send"></i> Send Message</button>
+            <div id="formSuccess" class="success-msg">✓ Message sent! I'll get back within 24 hours.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div class="footer-logo">ASIK</div>
+          <p style="margin: 16px 0;">Turning data into revenue growth</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61568117604870"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/md-asik-32b338194/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/asik9018"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul style="list-style: none; margin-top: 16px;">
+            <li><a href="#home" style="color: #94a3b8; text-decoration: none;">Home</a></li>
+            <li><a href="#about" style="color: #94a3b8; text-decoration: none;">About</a></li>
+            <li><a href="#services" style="color: #94a3b8; text-decoration: none;">Services</a></li>
+            <li><a href="#portfolio" style="color: #94a3b8; text-decoration: none;">Portfolio</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul style="list-style: none; margin-top: 16px;">
+            <li style="color: #94a3b8;">GA4 Setup & Migration</li>
+            <li style="color: #94a3b8;">GTM Architecture</li>
+            <li style="color: #94a3b8;">E-commerce Tracking</li>
+            <li style="color: #94a3b8;">Facebook CAPI</li>
+          </ul>
+        </div>
+      </div>
+      <hr style="border-color: #334155;">
+      <p style="text-align: center; margin-top: 24px; color: #94a3b8;">© 2025 Md. Asik Mia | Analytics that actually work</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal()">&times;</button>
+      <img id="modalImg" src="" alt="">
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Services Data
+    const services = [
+      { name: "GA4 Setup & Migration", icon: "fas fa-chart-simple", desc: "Complete GA4 implementation with custom events, conversions, and UA migration.", features: ["Custom Event Tracking", "Conversion Setup", "UA Data Migration", "Audience Building"] },
+      { name: "Google Tag Manager", icon: "fas fa-tags", desc: "Clean GTM architecture with version control and safe deployment.", features: ["Workspace Setup", "Variable Management", "Trigger Configuration", "Environment Setup"] },
+      { name: "E-commerce Tracking", icon: "fas fa-cart-shopping", desc: "Complete e-commerce tracking for Shopify, WooCommerce, and custom stores.", features: ["Purchase Tracking", "Product Views", "Checkout Flow", "Revenue Validation"] },
+      { name: "Google Ads Tracking", icon: "fab fa-google", desc: "Accurate conversion tracking for better bidding and ROAS.", features: ["Conversion Tags", "Enhanced Conversions", "Offline Imports", "Deduplication"] },
+      { name: "Facebook CAPI", icon: "fab fa-facebook", desc: "Server-side tracking for accurate attribution and better delivery.", features: ["Pixel Setup", "CAPI Integration", "Event Dedup", "Domain Verification"] },
+      { name: "Analytics QA & Training", icon: "fas fa-graduation-cap", desc: "Full audit, debugging, and team training for long-term success.", features: ["Complete Audit", "Debugging Tools", "Dashboard Setup", "Team Training"] }
+    ];
+
+    // Portfolio Data
+    const portfolio = [
+      { title: "Fashion E-commerce GA4", desc: "Migrated 2 Shopify stores to GA4, increased conversion visibility by 40%", img: "./source/portfolio-1-thumb.jpg", fullImg: "./source/portfolio-1.jpg" },
+      { title: "SaaS CAPI Implementation", desc: "Facebook CAPI + GTM server container, recovered 31% lost signals", img: "./source/portfolio-2-thumb.jpg", fullImg: "./source/portfolio-2.jpg" },
+      { title: "Google Ads Dashboard", desc: "Custom Looker Studio dashboard reducing CPA by 23%", img: "./source/portfolio-3-thumb.jpg", fullImg: "./source/portfolio-3.jpg" },
+      { title: "Headless eCommerce", desc: "Complete DataLayer for headless store with purchase tracking", img: "./source/portfolio-4-thumb.jpg", fullImg: "./source/portfolio-4.jpg" }
+    ];
+
+    // Render Services
+    const servicesGrid = document.getElementById('servicesGrid');
+    services.forEach(service => {
+      const card = document.createElement('div');
+      card.className = 'service-card';
+      card.innerHTML = `
+        <div class="service-icon"><i class="${service.icon}"></i></div>
+        <h3>${service.name}</h3>
+        <p>${service.desc}</p>
+        <ul class="service-features">
+          ${service.features.map(f => `<li><i class="fas fa-check-circle"></i> ${f}</li>`).join('')}
+        </ul>
+        <div style="display: flex; gap: 12px;">
+          <button class="btn btn-primary" onclick="showServiceDetail('${service.name}')">Learn More</button>
+          <button class="btn btn-outline" onclick="toggleQuoteForm(this, '${service.name}')">Get Quote</button>
+        </div>
+        <div class="quote-form" data-service="${service.name}">
+          <input type="text" placeholder="First Name" class="qf-first">
+          <input type="text" placeholder="Last Name" class="qf-last">
+          <input type="email" placeholder="Email" class="qf-email">
+          <input type="tel" placeholder="Phone" class="qf-phone">
+          <input type="text" placeholder="Country" class="qf-country">
+          <button class="btn btn-primary" onclick="submitQuote(this)">Send Request</button>
+          <div class="success-msg" style="font-size:12px;">✓ Request sent!</div>
+        </div>
+      `;
+      servicesGrid.appendChild(card);
+    });
+
+    // Render Portfolio
+    const portfolioGrid = document.getElementById('portfolioGrid');
+    portfolio.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'portfolio-item';
+      card.onclick = () => openModal(item.fullImg, item.title, item.desc);
+      card.innerHTML = `
+        <img src="${item.img}" alt="${item.title}">
+        <div class="portfolio-info">
+          <h4>${item.title}</h4>
+          <p>${item.desc}</p>
+        </div>
+      `;
+      portfolioGrid.appendChild(card);
+    });
+
+    // Functions
+    function showServiceDetail(service) {
+      const details = {
+        "GA4 Setup & Migration": "Complete GA4 property setup, custom event mapping, conversion alignment, and Universal Analytics migration with zero data loss. Includes validation report and ongoing support.",
+        "Google Tag Manager": "Professional GTM container setup with naming conventions, version control, environment configurations, and documentation for your team.",
+        "E-commerce Tracking": "End-to-end e-commerce tracking including product impressions, add to cart, purchase flow, and revenue validation with GA4 and BigQuery.",
+        "Google Ads Tracking": "Conversion tracking setup, enhanced conversions, server-side GTM for ads, offline conversion imports, and deduplication between platforms.",
+        "Facebook CAPI": "Facebook Pixel + CAPI server-side integration, event deduplication, advanced matching, and custom conversions for better ROAS.",
+        "Analytics QA & Training": "Complete analytics audit, debugging with tag inspector, custom dashboard creation, and hands-on training for your team."
+      };
+      openModal("", service, details[service] || "Detailed service approach includes audit, implementation, validation, and documentation.");
+    }
+
+    function toggleQuoteForm(btn, service) {
+      const card = btn.closest('.service-card');
+      const form = card.querySelector('.quote-form');
+      form.style.display = form.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function submitQuote(btn) {
+      const form = btn.closest('.quote-form');
+      const first = form.querySelector('.qf-first').value;
+      const last = form.querySelector('.qf-last').value;
+      const email = form.querySelector('.qf-email').value;
+      const phone = form.querySelector('.qf-phone').value;
+      const country = form.querySelector('.qf-country').value;
+      const service = form.getAttribute('data-service');
+      
+      if (!first || !last || !email || !phone || !country) {
+        alert('Please fill all fields');
+        return;
+      }
+      
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'quote_request', service, first, last, email, phone, country });
+      
+      const success = form.querySelector('.success-msg');
+      success.style.display = 'block';
+      setTimeout(() => success.style.display = 'none', 3000);
+      form.querySelectorAll('input').forEach(i => i.value = '');
+      form.style.display = 'none';
+    }
+
+    function openModal(imgSrc, title, desc) {
+      const modal = document.getElementById('modal');
+      const modalImg = document.getElementById('modalImg');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalDesc = document.getElementById('modalDesc');
+      
+      modalImg.src = imgSrc || './source/portfolio-1.jpg';
+      modalTitle.textContent = title;
+      modalDesc.textContent = desc;
+      modal.classList.add('open');
+    }
+
+    function closeModal() {
+      document.getElementById('modal').classList.remove('open');
+    }
+
+    // Contact Form
+    const contactForm = document.getElementById('contactForm');
+    const formSuccess = document.getElementById('formSuccess');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(contactForm);
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'contact_submit', data: Object.fromEntries(formData) });
+      formSuccess.style.display = 'block';
+      contactForm.reset();
+      setTimeout(() => formSuccess.style.display = 'none', 5000);
+    });
+
+    // Quick Form
+    const quickForm = document.getElementById('quickForm');
+    const quickSuccess = document.getElementById('quickSuccess');
+    quickForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('qfName').value;
+      if (!name) { alert('Please fill name'); return; }
+      quickSuccess.style.display = 'block';
+      quickForm.reset();
+      setTimeout(() => quickSuccess.style.display = 'none', 5000);
+    });
+
+    // Mobile Menu
+    document.querySelector('.mobile-menu').addEventListener('click', () => {
+      const nav = document.querySelector('.nav-links');
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
         }
+      });
+    });
 
-        // Main 3D Object: Data Core
-        const coreGroup = new THREE.Group();
-        
-        // Center sphere
-        const sphereGeo = new THREE.SphereGeometry(1.2, 64, 64);
-        const sphereMat = new THREE.MeshStandardMaterial({
-            color: 0x667eea,
-            emissive: 0x1a0a3a,
-            emissiveIntensity: 0.3,
-            metalness: 0.8,
-            roughness: 0.2,
-            transparent: true,
-            opacity: 0.9
-        });
-        const coreSphere = new THREE.Mesh(sphereGeo, sphereMat);
-        coreGroup.add(coreSphere);
-        
-        // Wireframe sphere
-        const wireframeGeo = new THREE.SphereGeometry(1.35, 32, 32);
-        const wireframeMat = new THREE.MeshBasicMaterial({
-            color: 0x764ba2,
-            wireframe: true,
-            transparent: true,
-            opacity: 0.3
-        });
-        const wireframeSphere = new THREE.Mesh(wireframeGeo, wireframeMat);
-        coreGroup.add(wireframeSphere);
-        
-        // Rings
-        const ringGeo = new THREE.TorusGeometry(1.5, 0.03, 64, 200);
-        const ringMat = new THREE.MeshStandardMaterial({ color: 0x667eea, emissive: 0x667eea, emissiveIntensity: 0.4 });
-        
-        const ring1 = new THREE.Mesh(ringGeo, ringMat);
-        ring1.rotation.x = Math.PI / 2;
-        coreGroup.add(ring1);
-        
-        const ring2 = new THREE.Mesh(ringGeo, ringMat);
-        ring2.rotation.z = Math.PI / 3;
-        ring2.rotation.x = Math.PI / 3;
-        coreGroup.add(ring2);
-        
-        const ring3 = new THREE.Mesh(ringGeo, ringMat);
-        ring3.rotation.z = Math.PI / 1.5;
-        ring3.rotation.x = Math.PI / 4;
-        coreGroup.add(ring3);
-        
-        // Particle system
-        const particleCount = 1500;
-        const particlesGeo = new THREE.BufferGeometry();
-        const particlePositions = new Float32Array(particleCount * 3);
-        for (let i = 0; i < particleCount; i++) {
-            const radius = 1.8 + Math.random() * 0.6;
-            const theta = Math.random() * Math.PI * 2;
-            const phi = Math.acos(2 * Math.random() - 1);
-            particlePositions[i*3] = radius * Math.sin(phi) * Math.cos(theta);
-            particlePositions[i*3+1] = radius * Math.sin(phi) * Math.sin(theta);
-            particlePositions[i*3+2] = radius * Math.cos(phi);
-        }
-        particlesGeo.setAttribute('position', new THREE.BufferAttribute(particlePositions, 3));
-        const particleMat = new THREE.PointsMaterial({
-            color: 0x667eea,
-            size: 0.02,
-            transparent: true,
-            blending: THREE.AdditiveBlending
-        });
-        const particles = new THREE.Points(particlesGeo, particleMat);
-        coreGroup.add(particles);
-        
-        scene.add(coreGroup);
-
-        // Floating data cubes
-        const cubes = [];
-        const cubePositions = [
-            { x: -2.5, y: 1.2, z: -1.5, color: 0x667eea },
-            { x: 2.8, y: 0.8, z: -1.8, color: 0x764ba2 },
-            { x: -1.8, y: -1, z: -2.2, color: 0x06b6d4 },
-            { x: 2, y: -0.5, z: -2.5, color: 0x8b5cf6 },
-            { x: 0, y: 2.2, z: -1, color: 0xec4899 }
-        ];
-        
-        cubePositions.forEach(pos => {
-            const geo = new THREE.BoxGeometry(0.25, 0.25, 0.25);
-            const mat = new THREE.MeshStandardMaterial({ color: pos.color, emissive: pos.color, emissiveIntensity: 0.3 });
-            const cube = new THREE.Mesh(geo, mat);
-            cube.position.set(pos.x, pos.y, pos.z);
-            scene.add(cube);
-            cubes.push({ mesh: cube, speed: 0.008 + Math.random() * 0.015, rotSpeed: 0.005 + Math.random() * 0.01, posY: pos.y });
-        });
-
-        // Starfield
-        const starCount = 2000;
-        const starGeo = new THREE.BufferGeometry();
-        const starPositions = new Float32Array(starCount * 3);
-        for (let i = 0; i < starCount; i++) {
-            starPositions[i*3] = (Math.random() - 0.5) * 200;
-            starPositions[i*3+1] = (Math.random() - 0.5) * 100;
-            starPositions[i*3+2] = (Math.random() - 0.5) * 80 - 40;
-        }
-        starGeo.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
-        const starMat = new THREE.PointsMaterial({ color: 0xffffff, size: 0.06, transparent: true, opacity: 0.5 });
-        const stars = new THREE.Points(starGeo, starMat);
-        scene.add(stars);
-
-        // Animation
-        let time = 0;
-        
-        function animate() {
-            requestAnimationFrame(animate);
-            time += 0.016;
-            
-            coreGroup.rotation.y += 0.003;
-            coreGroup.rotation.x = Math.sin(time * 0.2) * 0.1;
-            coreGroup.rotation.z = Math.cos(time * 0.3) * 0.05;
-            
-            ring1.rotation.z += 0.01;
-            ring2.rotation.x += 0.008;
-            ring3.rotation.y += 0.012;
-            
-            cubes.forEach(cube => {
-                cube.mesh.rotation.x += cube.rotSpeed;
-                cube.mesh.rotation.y += cube.rotSpeed * 1.5;
-                cube.mesh.position.y = cube.posY + Math.sin(time * cube.speed * 10) * 0.1;
-            });
-            
-            stars.rotation.y += 0.0005;
-            stars.rotation.x += 0.0003;
-            
-            accentLights.forEach((light, idx) => {
-                const angle = time * 0.5 + idx * Math.PI * 2 / 3;
-                light.position.x = Math.sin(angle) * 4;
-                light.position.z = Math.cos(angle) * 4;
-            });
-            
-            controls.update();
-            renderer.render(scene, camera);
-        }
-        
-        animate();
-
-        window.addEventListener('resize', () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
-        });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
-
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.128.0/build/three.module.js",
-                "three/addons/": "https://unpkg.com/three@0.128.0/examples/jsm/"
-            }
-        }
-    </script>
-
-    <script type="module">
-        import * as THREE from 'three';
-        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-        
-        // Re-initialize with proper imports
-        const canvasEl = document.getElementById('bg-canvas');
-        const sceneEl = new THREE.Scene();
-        sceneEl.background = new THREE.Color(0x0a0a2a);
-        sceneEl.fog = new THREE.FogExp2(0x0a0a2a, 0.008);
-        
-        const cameraEl = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
-        cameraEl.position.set(0, 2, 8);
-        
-        const rendererEl = new THREE.WebGLRenderer({ canvas: canvasEl, alpha: false, antialias: true });
-        rendererEl.setSize(window.innerWidth, window.innerHeight);
-        rendererEl.setPixelRatio(window.devicePixelRatio);
-        
-        const controlsEl = new OrbitControls(cameraEl, canvasEl);
-        controlsEl.enableDamping = true;
-        controlsEl.dampingFactor = 0.05;
-        controlsEl.autoRotate = true;
-        controlsEl.autoRotateSpeed = 1.2;
-        controlsEl.enableZoom = false;
-        controlsEl.enablePan = false;
-        controlsEl.target.set(0, 0, 0);
-        
-        const ambientLightEl = new THREE.AmbientLight(0x404060);
-        sceneEl.add(ambientLightEl);
-        
-        const mainLightEl = new THREE.DirectionalLight(0xffffff, 1);
-        mainLightEl.position.set(5, 10, 7);
-        sceneEl.add(mainLightEl);
-        
-        const fillLightEl = new THREE.PointLight(0x667eea, 0.5);
-        fillLightEl.position.set(0, -2, 0);
-        sceneEl.add(fillLightEl);
-        
-        const backLightEl = new THREE.PointLight(0x764ba2, 0.6);
-        backLightEl.position.set(-2, 1, -4);
-        sceneEl.add(backLightEl);
-        
-        const coreGroupEl = new THREE.Group();
-        
-        const sphereGeoEl = new THREE.SphereGeometry(1.2, 64, 64);
-        const sphereMatEl = new THREE.MeshStandardMaterial({
-            color: 0x667eea,
-            emissive: 0x1a0a3a,
-            emissiveIntensity: 0.3,
-            metalness: 0.8,
-            roughness: 0.2,
-            transparent: true,
-            opacity: 0.9
-        });
-        const coreSphereEl = new THREE.Mesh(sphereGeoEl, sphereMatEl);
-        coreGroupEl.add(coreSphereEl);
-        
-        const wireframeGeoEl = new THREE.SphereGeometry(1.35, 32, 32);
-        const wireframeMatEl = new THREE.MeshBasicMaterial({ color: 0x764ba2, wireframe: true, transparent: true, opacity: 0.3 });
-        const wireframeSphereEl = new THREE.Mesh(wireframeGeoEl, wireframeMatEl);
-        coreGroupEl.add(wireframeSphereEl);
-        
-        const ringGeoEl = new THREE.TorusGeometry(1.5, 0.03, 64, 200);
-        const ringMatEl = new THREE.MeshStandardMaterial({ color: 0x667eea, emissive: 0x667eea, emissiveIntensity: 0.4 });
-        
-        const ring1El = new THREE.Mesh(ringGeoEl, ringMatEl);
-        ring1El.rotation.x = Math.PI / 2;
-        coreGroupEl.add(ring1El);
-        
-        const ring2El = new THREE.Mesh(ringGeoEl, ringMatEl);
-        ring2El.rotation.z = Math.PI / 3;
-        ring2El.rotation.x = Math.PI / 3;
-        coreGroupEl.add(ring2El);
-        
-        const ring3El = new THREE.Mesh(ringGeoEl, ringMatEl);
-        ring3El.rotation.z = Math.PI / 1.5;
-        ring3El.rotation.x = Math.PI / 4;
-        coreGroupEl.add(ring3El);
-        
-        const particleCountEl = 1500;
-        const particlesGeoEl = new THREE.BufferGeometry();
-        const particlePositionsEl = new Float32Array(particleCountEl * 3);
-        for (let i = 0; i < particleCountEl; i++) {
-            const radius = 1.8 + Math.random() * 0.6;
-            const theta = Math.random() * Math.PI * 2;
-            const phi = Math.acos(2 * Math.random() - 1);
-            particlePositionsEl[i*3] = radius * Math.sin(phi) * Math.cos(theta);
-            particlePositionsEl[i*3+1] = radius * Math.sin(phi) * Math.sin(theta);
-            particlePositionsEl[i*3+2] = radius * Math.cos(phi);
-        }
-        particlesGeoEl.setAttribute('position', new THREE.BufferAttribute(particlePositionsEl, 3));
-        const particleMatEl = new THREE.PointsMaterial({ color: 0x667eea, size: 0.02, transparent: true, blending: THREE.AdditiveBlending });
-        const particlesEl = new THREE.Points(particlesGeoEl, particleMatEl);
-        coreGroupEl.add(particlesEl);
-        
-        sceneEl.add(coreGroupEl);
-        
-        const starCountEl = 2000;
-        const starGeoEl = new THREE.BufferGeometry();
-        const starPositionsEl = new Float32Array(starCountEl * 3);
-        for (let i = 0; i < starCountEl; i++) {
-            starPositionsEl[i*3] = (Math.random() - 0.5) * 200;
-            starPositionsEl[i*3+1] = (Math.random() - 0.5) * 100;
-            starPositionsEl[i*3+2] = (Math.random() - 0.5) * 80 - 40;
-        }
-        starGeoEl.setAttribute('position', new THREE.BufferAttribute(starPositionsEl, 3));
-        const starMatEl = new THREE.PointsMaterial({ color: 0xffffff, size: 0.06, transparent: true, opacity: 0.5 });
-        const starsEl = new THREE.Points(starGeoEl, starMatEl);
-        sceneEl.add(starsEl);
-        
-        let timeEl = 0;
-        
-        function animateEl() {
-            requestAnimationFrame(animateEl);
-            timeEl += 0.016;
-            
-            coreGroupEl.rotation.y += 0.003;
-            coreGroupEl.rotation.x = Math.sin(timeEl * 0.2) * 0.1;
-            coreGroupEl.rotation.z = Math.cos(timeEl * 0.3) * 0.05;
-            
-            ring1El.rotation.z += 0.01;
-            ring2El.rotation.x += 0.008;
-            ring3El.rotation.y += 0.012;
-            
-            starsEl.rotation.y += 0.0005;
-            starsEl.rotation.x += 0.0003;
-            
-            controlsEl.update();
-            rendererEl.render(sceneEl, cameraEl);
-        }
-        
-        animateEl();
-        
-        window.addEventListener('resize', () => {
-            cameraEl.aspect = window.innerWidth / window.innerHeight;
-            cameraEl.updateProjectionMatrix();
-            rendererEl.setSize(window.innerWidth, window.innerHeight);
-        });
-    </script>
+    // Close modal on escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
 </body>
 </html>
